@@ -77,7 +77,6 @@ const actions = {
 
   generateRoutes({ commit }, { roles, routes }) {
     const PermissionRouters = filterPermissionRoutes(routes, clientRoutes)
-    console.log(PermissionRouters)
     return new Promise(resolve => {
       let accessedRoutes
       if (roles.includes('admin')) {
